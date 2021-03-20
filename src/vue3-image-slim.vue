@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="display:inline-block">
     <input
       type="file"
       :id="inputId"
