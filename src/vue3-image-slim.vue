@@ -9,8 +9,8 @@
     />
     <div
       @click="doClick"
-      :disabled="disabled"
-      class="vue3-image-slim-button"
+      class="vue-image-slim-button"
+      :class="{ disabled }"
       :style="{ width: btnWidth, height: btnHeight }"
     ></div>
     <div style="display: none">
@@ -210,7 +210,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <style scope>
-.vue3-image-slim-button {
+.vue-image-slim-button {
   position: relative;
   border: 1px solid #eee;
   background: transparent !important;
@@ -221,27 +221,28 @@ export default /*#__PURE__*/ defineComponent({
   padding: 0;
 }
 
-.vue3-image-slim-button:before,
-.vue3-image-slim-button:after {
+.vue-image-slim-button:before,
+.vue-image-slim-button:after {
   content: "";
   position: absolute;
   background: #ccc;
 }
 
-.vue3-image-slim-button:before {
+.vue-image-slim-button:before {
   left: calc(50% - 1px);
   top: 5%;
   height: 90%;
   width: 3px;
 }
 
-.vue3-image-slim-button:after {
+.vue-image-slim-button:after {
   top: calc(50% - 1px);
   left: 5%;
   height: 3px;
   width: 90%;
 }
-.vue3-image-slim-button.disabled {
+.vue-image-slim-button.disabled {
   cursor: not-allowed;
+  pointer-events: none;
 }
 </style>

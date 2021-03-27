@@ -1,6 +1,6 @@
 {
   "name": "vue3-image-slim",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A vue3 component to crop and optimize your images before you upload them.",
   "main": "dist/vue3-image-slim.ssr.js",
   "browser": "dist/vue3-image-slim.esm.js",
