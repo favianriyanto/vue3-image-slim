@@ -112,7 +112,7 @@ export default /*#__PURE__*/ defineComponent({
     });
 
     const doClick = () => {
-      if (input) {
+      if (input && !props.disabled) {
         input.click();
       }
     };
@@ -243,6 +243,5 @@ export default /*#__PURE__*/ defineComponent({
 }
 .vue-image-slim-button.disabled {
   cursor: not-allowed;
-  pointer-events: none;
 }
 </style>
