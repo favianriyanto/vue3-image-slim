@@ -15,6 +15,7 @@ npm install vue3-image-slim
 ## 使用
   1.  在script中引入：
   > import Vue3ImageSlim from "vue3-image-slim"
+  > import "vue3-image-slim/dist/default.css"
   2. 在components中:
   ```
   components:{
@@ -66,6 +67,8 @@ npm install vue3-image-slim
 ## Usage
   1. in script tag:
   > import Vue3ImageSlim from "vue3-image-slim"
+  > import "vue3-image-slim/dist/default.css"
+  
   2. put it into components:
   ```
   components:{

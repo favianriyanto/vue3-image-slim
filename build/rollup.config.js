@@ -8,6 +8,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import babel from '@rollup/plugin-babel';
 import PostCSS from 'rollup-plugin-postcss';
+import css from 'rollup-plugin-css-only';
 import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
@@ -43,6 +44,7 @@ const baseConfig = {
     vue: {
     },
     postVue: [
+      css({ output: 'default.css' }),
       // Process only `<style module>` blocks.
       PostCSS({
         modules: {
